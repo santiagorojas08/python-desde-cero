@@ -1,11 +1,10 @@
-nombre = "Futuro Ingeniero en IA"
-print("¡Hola, mae! Bienvenido a tu primer programa en Python,", nombre)
+nombre = input("¿Cómo te llamás? ")
+edad = int(input("¿Cuántos años tenés? "))
 
-# Una pequeña prueba de lógica
-edad = 18
-if edad >= 18:
-    imprimir_mensaje = "Estás listo para comerte el mundo de la tecnología."
+if edad >= 65:
+    mensaje = f"¡Hola, {nombre}! Con {edad} años, eres una persona muy experimentada."
+elif edad >= 18:
+    mensaje = f"¡Hola, {nombre}! Con {edad} años, eres un adulto."
 else:
-    imprimir_mensaje = "¡Apenas estás empezando!"
-
-print(imprimir_mensaje)
+    mensaje = f"Wow, sos muy joven! {nombre}"
+print(mensaje)
